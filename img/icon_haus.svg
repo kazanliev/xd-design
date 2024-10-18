@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="43" viewBox="0 0 43 43">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rechteck_218" data-name="Rechteck 218" width="25.214" height="21.841" fill="#231651"/>
+    </clipPath>
+  </defs>
+  <g id="icon_haus" transform="translate(-465 -1145)">
+    <circle id="Ellipse_35" data-name="Ellipse 35" cx="21.5" cy="21.5" r="21.5" transform="translate(465 1145)" fill="#d6fff7"/>
+    <g id="Gruppe_302" data-name="Gruppe 302" transform="translate(473.893 1155.579)">
+      <g id="Gruppe_301" data-name="Gruppe 301" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Pfad_1151" data-name="Pfad 1151" d="M24.989,19.085,15.8,26.016V36.408a.218.218,0,0,0,.219.219H34.1a.219.219,0,0,0,.219-.219V26.125ZM24.738,30.6a.64.64,0,0,1-.64.64H22.864a.64.64,0,0,1-.64-.64V29.361a.641.641,0,0,1,.64-.64H24.1a.64.64,0,0,1,.64.64Zm0-3.248a.64.64,0,0,1-.64.64H22.864a.64.64,0,0,1-.64-.64V26.113a.64.64,0,0,1,.64-.64H24.1a.64.64,0,0,1,.64.64ZM27.986,30.6a.64.64,0,0,1-.64.64H26.112a.64.64,0,0,1-.64-.64V29.361a.641.641,0,0,1,.64-.64h1.234a.64.64,0,0,1,.64.64Zm0-3.248a.64.64,0,0,1-.64.64H26.112a.64.64,0,0,1-.64-.64V26.113a.64.64,0,0,1,.64-.64h1.234a.64.64,0,0,1,.64.64Z" transform="translate(-12.244 -14.786)" fill="#231651"/>
+        <path id="Pfad_1152" data-name="Pfad 1152" d="M1.127,11.193A1.126,1.126,0,0,1,.452,9.164L12.719,0l12.05,9.17A1.126,1.126,0,1,1,23.4,10.963l-10.7-8.142L1.8,10.969a1.12,1.12,0,0,1-.673.224" transform="translate(0 0)" fill="#231651"/>
+        <path id="Pfad_1153" data-name="Pfad 1153" d="M15.911,7.14V3.193a.931.931,0,0,1,.826-1.009h1.932A.931.931,0,0,1,19.5,3.193V4.584" transform="translate(-12.327 -1.692)" fill="#231651"/>
+      </g>
+    </g>
+  </g>
+</svg>
