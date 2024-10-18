@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: jaf-facitweb, sans-serif;
+    line-height: 1.6;
+    background-color: #F1F6F5;
+}
+
+header, .hero, .split-section {
+    width: 100%;
+    display: block;
+    clear: both; /* Ensures the sections don't overlap */
+    position: relative; /* Fixes stacking context */
+    margin-bottom: 20px; /* Adds space between sections */
+}
+
+/* Header styling */
+.header {
+    display: flex; /* Align logos horizontally */
+    justify-content: space-around; /* Optional: space logos evenly */
+    padding: 20px; /* Adjust as needed */
+}
+
+.header__logo {
+    display: inline-block; /* Allows the link to have width and height */
+    text-decoration: none; /* Removes the underline from the link */
+}
+
+.header__logo--img {
+    width: 100px; /* Set the desired width for the logos */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Optional: add a hover effect */
+}
+
+.header__logo--img:hover {
+    transform: scale(1.1); /* Optional: scale effect on hover */
+}
+
+
+/* Hero styling */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: flex-end; /* Align content to the right */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Position for pseudo-element */
+}
+
+/* Background image */
+.hero{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('img/image.png');
+    background-size: cover; /* Cover the whole section */
+    background-position: center; /* Center the image */
+    opacity: 0.7; /* Optional: make it slightly transparent */
+    z-index: 1; /* Send the image behind the content */
+    padding-bottom: 50px;
+}
+.hero__image{
+    float: left;
+    /* border-color: red;
+    border-style: solid; */
+
+}
+
+/* Content styles */
+.hero__content {
+    /* border-color: red;
+    border-style: solid; */
+    float:left;
+    position: relative; /* To stay on top of the image */
+    z-index: 2; /* Bring content above the image */
+    color: white; /* Text color */
+    max-width: 600px; /* Limit content width */
+    padding: 20px; /* Add padding */
+    text-align: right; /* Align text to the right */
+}
+
+.hero__title {
+    font-size: 3rem; /* Large title */
+    margin: 0; /* Remove default margin */
+}
+
+.hero__subtitle {
+    font-size: 1rem; /* Smaller subtitle */
+    margin: 10px 0; /* Add margin */
+}
+
+.hero__btn {
+    display: inline-block; /* Display as a block for padding */
+    padding: 10px 20px; /* Button padding */
+    background-color: #d6fff7; /* Button color */
+    color: black; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 100px; /* Rounded corners */
+    margin: 20px 0; /* Add margin */
+}
+
+.hero__small-text {
+    font-size: 1rem; /* Smaller text */
+}
+
+.highlight {
+    font-family: 'Arial', sans-serif; /* Change to your desired font */
+    /* color: #FF5733; */
+    font-weight: bold; /* Optional: make it bold */
+}
+
+/* Media Query for large screens */
+/* @media (min-width: 1200px) {
+    .hero {
+        max-width: 90%; 
+        margin: 0 auto; 
+    }
+}  */
+
+
+
+/* Split section */
+
+/* General section styles */
+.split-section {
+    background-color: white; /* White background for the section */
+    padding: 50px 0; /* Add some padding to give spacing around the section */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    /* margin-top: 5000px; */
+}
+
+/* Heading styles */
+.split-section__header h2 {
+    font-size: 2.5rem; /* You can adjust this as needed */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Content container */
+.split-section__content {
+    display: flex;
+    justify-content: space-between; /* Ensure left and right parts are split */
+    align-items: center; /* Vertically center the content */
+    max-width: 1200px; /* Limit the maximum width of the section */
+    width: 100%; /* Ensure full width */
+    padding: 20px;
+}
+
+/* Left (image) section */
+.split-section__left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.split-section__left img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    max-width: 500px; /* Adjust as needed */
+}
+
+/* Right (text) section */
+.split-section__right {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.split-section__right p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Make the layout responsive for smaller screens */
+@media (max-width: 768px) {
+    .split-section__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .split-section__left,
+    .split-section__right {
+        padding: 0;
+    }
+
+    .split-section__left img {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+/* Location section */
+
+/* General Section Styling */
+.location-section {
+    background-color: #F1F6F5;
+    padding: 50px 0; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-section__content {
+    width: 80%; /* Content width */
+    max-width: 1200px; /* Limit max width */
+}
+
+/* Heading and Dash */
+.location-section__heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.horizontal-dash {
+    width: 150px; /* Adjust the width of the dash */
+    height: 2px;
+    background-color: #333; /* Color of the dash */
+    margin: 10px auto; /* Center it horizontally */
+}
+
+/* Text and Locations Area */
+.location-section__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    margin-bottom: 30px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.location-section__text {
+    width: 20%;
+    font-size: 1.2rem;
+}
+
+/* Locations Grid */
+.location-section__locations {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap; /* Wrap locations onto the next line if needed */
+    gap: 10px; /* Add spacing between locations */
+}
+
+/* Individual Location Styling */
+.location {
+    background-color: #FFDED2;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: #EE7547;
+    font-weight: bold;
+}
+
+.location-icon {
+    width: 16px;
+    height: 16px;
+    background-color: #EE7547; /* Icon color */
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Dropdown Styling */
+.location-section__dropdown {
+    flex: 1; /* Allow the dropdown to take up space */
+    text-align: right;
+    position: relative;
+    z-index: 10;
+    min-width: 100px; /* Ensure a minimum width */
+}
+
+.dropdown-menu {
+    display: block; /* Ensure it's visible */
+    background-color: #FFFFFF; /* Keep the white background */
+    border: 1px solid red; /* Use this for visibility during testing */
+    border-radius: 5px; /* Adjust for aesthetics */
+    padding: 10px; /* Padding inside the dropdown */
+    width: auto; /* Adjust the width as necessary */
+    max-width: 200px; /* Limit the width of the dropdown */
+    height: 30px; /* Temporary fixed height for visibility */
+}
+
+/* Additional horizontal dash styling */
+.horizontal-dash {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #D4D4D4; /* Adds the border */
+    width: 150px; /* or whatever width you need */
+    height: 2px; /* or whatever height you need */
+    background-color: #333; /* Set the color of the horizontal dash */
+    margin: 20px auto; /* Center the dash */
+}
+
+
+
+
+
+
+
+
+
+
+/* General section styling */
+.people-section {
+    background-color: #F1F6F5; /* Same background color */
+    padding: 50px 0; /* Add space around the section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Person card */
+.person {
+    display: flex;
+    width: 80%; /* Adjust as needed for the width of the subsection */
+    margin-bottom: 40px; /* Add space between subsections */
+    align-items: center; /* Vertically align image and text */
+}
+
+/* Image styling */
+.person__image {
+    flex: 1;
+    padding-right: 20px; /* Spacing between image and details */
+}
+
+.person__image img {
+    width: 100%; /* Make image responsive */
+    max-width: 300px; /* Limit max size */
+    height: auto;
+    border-radius: 50%; /* Optional: round image */
+}
+
+/* Right side content */
+.person__details {
+    flex: 2;
+    padding-left: 20px;
+}
+
+/* Name and location */
+.person__header {
+    display: flex;
+    justify-content: left; /* Name on left, location on right */
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.person__name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.location {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Location icon styling */
+.location-icon {
+    background-color: #EE7547; /* Icon color */
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 8px; /* Space between icon and location text */
+}
+
+/* Description text */
+.person__description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Website link styling */
+.person__link {
+    display: inline; /* Inline to behave like a regular text link */
+    background-color: #D6FFF7; /* Highlight color */
+    padding: 2px 4px; /* Small padding to create the highlight effect */
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 3px; /* Optional: a slight rounding for softer edges */
+    margin-bottom: 10px; /* Remove margin if not needed */
+}
+
+.person__link:hover {
+    background-color: #BFFFE6; /* Slightly lighter highlight on hover */
+    text-decoration: underline; /* Optionally add underline on hover */
+}
+
+/* Button styling */
+.person__btn {
+    display: block;
+    background-color: #231651;
+    color: #D6FFF7;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; 
+}
+
+.person__btn:hover {
+    background-color: #3B285C; /* Slightly lighter on hover */
+}
+
+/* Responsive Layout: Stack image and text on smaller screens */
+@media (max-width: 768px) {
+    .person {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center items */
+    }
+
+    .person__image {
+        padding-right: 0; /* Remove right padding */
+        margin-bottom: 20px; /* Add margin between image and text */
+    }
+
+    .person__details {
+        padding-left: 0; /* Remove left padding */
+        text-align: center; /* Center the text content */
+    }
+
+    .person__header {
+        flex-direction: column; /* Stack name and location vertically */
+    }
+
+    .person__name {
+        margin-bottom: 10px; /* Add space between name and location */
+    }
+
+    .location {
+        justify-content: center; /* Center location text */
+    }
+}
+
+
+
+
+
+/* Footer styling */
+.footer {
+    background-color: #231651; /* Dark background */
+    padding: 20px; /* Add padding inside the footer */
+    color: white; /* Text color */
+    position: relative; /* Stay within the normal flow of the page */
+    margin-bottom: 10px; /* Distance from the bottom of the page */
+}
+
+.footer__content {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    margin-left: 20px; /* Add left margin to give space from the page edge */
+}
+
+.footer__link {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    margin-right: 10px; /* Space between links */
+}
+
+.footer__separator {
+    color: white; /* Separator color */
+    margin-right: 10px; /* Space after the separator */
+}
+
+.footer__link:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
