@@ -130,11 +130,24 @@ body {
     /* margin-top: 5000px; */
 }
 
+
 /* Heading styles */
 .split-section__header h2 {
     font-size: 2.5rem; /* You can adjust this as needed */
     margin-bottom: 20px;
     text-align: center;
+}
+
+.split-section__header h2 {
+    display: inline-block; /* Allow the heading to be inline */
+    margin: 0; /* Remove default margin */
+    margin-right: 10px; /* Add space between the heading and the arrow */
+}
+
+.split-section__header img {
+    margin-top: 80px;
+    display: inline-block; /* Keep the arrow inline with the heading */
+    vertical-align: middle; /* Align the arrow vertically with the heading */
 }
 
 /* Content container */
@@ -163,6 +176,12 @@ body {
 .split-section__right {
     flex: 1;
     padding-left: 20px;
+}
+
+.split-section__right h1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    color:#EE7547;
 }
 
 .split-section__right p {
