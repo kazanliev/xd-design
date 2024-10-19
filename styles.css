@@ -257,6 +257,7 @@ body {
 }
 
 /* Individual Location Styling */
+
 .location {
     background-color: #FFDED2;
     border-radius: 50px;
@@ -267,13 +268,12 @@ body {
     font-weight: bold;
 }
 
-.location-icon {
-    /* width: 16px;
-    height: 16px; */
-    background-color: #EE7547; /* Icon color */
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 10px;
+.material-icons-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 3000,
+  'GRAD' 0,
+  'opsz' 10;
 }
 
 /* Dropdown Styling */
@@ -317,6 +317,22 @@ body {
 
 
 /* General section styling */
+
+.icon-container {
+    background-color: #D6FFF7; /* Circle background color */
+    border-radius: 50%; /* Make it a circle */
+    display: inline-flex; /* Align items inside */
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+    width: 40px; /* Set the width of the circle */
+    height: 40px; /* Set the height of the circle */
+    margin-right: 10px; /* Space between the icon and text */
+}
+
+.filled_icon {
+    color: #231651; /* Icon color */
+    font-size: 24px; /* Adjust size if needed */
+}
 
 .people-section {
     background-color: #F1F6F5; /* Same background color */
