@@ -370,6 +370,7 @@ body {
 .person__details {
     flex: 2; /* This will take 2/3 of the card */
     padding: 20px; /* Add padding for details */
+    margin-left: 50px;
 }
 
 /* Name and location */
