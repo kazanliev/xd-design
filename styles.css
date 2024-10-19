@@ -269,6 +269,7 @@ body {
 
 /* Locations Grid */
 .location-section__locations {
+    position: relative;
     width: 75%;
     display: flex;
     flex-wrap: wrap; /* Wrap locations onto the next line if needed */
@@ -430,13 +431,11 @@ body {
 
 /* Website link styling */
 .person__link {
+    
     display: inline; /* Inline to behave like a regular text link */
     background-color: #D6FFF7; /* Highlight color */
-    padding: 2px 4px; /* Small padding to create the highlight effect */
-    color: black; /* Text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 3px; /* Optional: a slight rounding for softer edges */
-    margin-bottom: 10px; /* Remove margin if not needed */
+    text-decoration: none;
+    color: black;
 }
 
 .person__link:hover {
