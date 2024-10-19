@@ -446,11 +446,12 @@ body {
 
 /* Website link styling */
 .person__link {
-    
     display: inline; /* Inline to behave like a regular text link */
     background-color: #D6FFF7; /* Highlight color */
     text-decoration: none;
     color: black;
+    text-align: left;
+    align-self: flex-start;
 }
 
 .person__link:hover {
