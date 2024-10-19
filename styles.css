@@ -56,6 +56,11 @@ body {
     padding: 0; /* Adjusted padding for left and right only */
 }
 
+@media (max-width: 820px) {
+    .hero {
+        background-position: right; /* Focus on the right side of the image */
+    }
+}
 
 
 
@@ -281,6 +286,7 @@ body {
     display: flex;
     flex-wrap: wrap; /* Wrap locations onto the next line if needed */
     gap: 10px; /* Add spacing between locations */
+    padding-left: 20px;
 }
 
 /* Individual Location Styling */
@@ -316,7 +322,8 @@ body {
     border: 1px solid #ccc; /* Add a border for visibility */
     border-radius: 50px; /* Round the corners */
     cursor: pointer; /* Show pointer cursor */
-    margin-top: -25px;  
+    margin-top: -25px; 
+    margin-left: 20px; 
 }
 
 /* Additional horizontal dash styling */
