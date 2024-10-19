@@ -178,6 +178,7 @@ body {
 .split-section__right {
     flex: 1;
     padding-left: 20px;
+    text-align: center;
 }
 
 .split-section__right h1 {
