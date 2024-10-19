@@ -183,12 +183,14 @@ body {
 .split-section__right h1 {
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;
+    font-size: 3rem;
     color:#EE7547;
 }
 
-.split-section__right p {
+.split-section__right--content {
     font-size: 1.2rem;
     line-height: 1.6;
+    text-align: left;
 }
 
 .split-section__btn {
@@ -397,6 +399,11 @@ body {
     flex: 2; /* This will take 2/3 of the card */
     padding: 20px; /* Add padding for details */
     margin-left: 50px;
+
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: left; /* Optional: center text inside */
 }
 
 /* Name and location */
@@ -433,6 +440,7 @@ body {
 .person__description {
     font-size: 1rem;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 /* Website link styling */
@@ -468,7 +476,7 @@ body {
 }
 
 /* Responsive Layout: Stack image and text on smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .person {
         flex-direction: column; /* Stack image and text vertically */
         align-items: center; /* Center items */
