@@ -41,24 +41,29 @@ body {
     background-color: #F1F6F5;
 }
 
+.hero_back {
+    background-color: white;
+}
+
 .hero {
     display: flex;
     align-items: center; /* Center vertically */
     justify-content: right; /* Align content to the right */
     /* padding: 20px;  */
     min-height: 600px;
+    max-width: 1920px;
     overflow: hidden; /* Hide overflow */
     position: relative; /* Position for pseudo-element */
     background-image: url('img/hero_image.png');
-    background-color: white;
-    background-position: center; /* Center the image */
+    background-position: center center; /* Center the image */
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     z-index: 1; /* Send the image behind the content */
     padding: 0; /* Adjusted padding for left and right only */
+    margin: 0 auto;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1000px) {
     .hero {
         background-position: right; /* Focus on the right side of the image */
     }
@@ -67,10 +72,8 @@ body {
 
 /* Content styles */
 .hero__content {
-    /* border-color: red;
-    border-style: solid; */
     float:left;
-    position: relative; /* To stay on top of the image */
+    position: relative; 
     z-index: 2; /* Bring content above the image */
     color: white; /* Text color */
     max-width: 600px; /* Limit content width */
