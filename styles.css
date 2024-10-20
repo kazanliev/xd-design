@@ -1,20 +1,20 @@
 * {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: white;
+    background-color: white;
 }
 
 .light-blue_background {
-  background-color: #f1f6f5;
+    background-color: #f1f6f5;
 }
 
 .highlight,
 .split-section__right h1 {
-  font-family: "Caveat", cursive;
+    font-family: "Caveat", cursive;
 }
 
 .hero__title,
@@ -23,529 +23,505 @@ body {
 .split-section__header h2 a,
 .location-section__heading h2,
 .blue_highlight {
-  font-family: "Alatsi", sans-serif;
+    font-family: "Alatsi", sans-serif;
 }
 
 .material-icons-outlined {
-  font-variation-settings: "FILL" 0, "wght" 3000, "GRAD" 0, "opsz" 10;
+    font-variation-settings: "FILL" 0, "wght" 3000, "GRAD" 0, "opsz" 10;
 }
 
 /* Section: Header */
 .header {
-  display: flex;
-  justify-content: left;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  padding-left: 60px;
-  background-color: white;
-  gap: 40px;
+    display: flex;
+    justify-content: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-left: 60px;
+    background-color: white;
+    gap: 40px;
 }
 
 .header__logo {
-  display: inline-block;
-  text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .header__logo img {
-  width: 100px;
-  height: auto;
-  transition: transform 0.3s ease;
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
 .header__logo img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* Section: Hero */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  min-height: 600px;
-  max-width: 1920px;
-  background-image: url("img/hero_image.png");
-  background-position: right center;
-  background-repeat: no-repeat;
-  z-index: 1;
-  margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    min-height: 600px;
+    max-width: 1920px;
+    background-image: url("img/hero_image.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    margin: 0;
 }
 
 .hero__content {
-  float: left;
-  position: relative;
-  z-index: 2;
-  color: white;
-  max-width: 600px;
-  padding: 20px;
-  margin-right: 200px;
-  text-align: left;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-}
-
-@media (max-width: 800px) {
-  .hero__content {
-    margin-right: 20px;
-  }
+    float: left;
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 600px;
+    padding: 20px;
+    margin-right: 200px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
 .hero__title {
-  font-weight: 400;
-  font-size: 3rem; /* Large title */
-  margin: 0; /* Remove default margin */
-  text-align: left;
-  padding-top: 40px;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 0;
+    text-align: left;
+    padding-top: 40px;
 }
 
 .hero__subtitle {
-  font-size: 1rem; /* Smaller subtitle */
-  margin: 10px 0; /* Add margin */
+    font-size: 1rem;
+    margin: 10px 0;
 }
 
 .buchhaltung__btn {
-  font-weight: 200;
-  font-size: x-large;
-  letter-spacing: 0.5px;
-  display: inline-block; /* Display as a block for padding */
-  padding: 15px 30px; /* Button padding */
-  background-color: #d6fff7; /* Button color */
-  color: black; /* Button text color */
-  text-decoration: none; /* Remove underline */
-  border-radius: 100px; /* Rounded corners */
-  margin: 20px auto; /* Add margin */
-  text-align: center;
-  border: none;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-  cursor: pointer;
+    font-weight: 200;
+    font-size: x-large;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #d6fff7;
+    color: black;
+    text-decoration: none;
+    border-radius: 100px;
+    margin: 20px auto;
+    text-align: center;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 }
 
 .buchhaltung__btn:hover {
-  background-color: #ecfffb; /* Slightly lighter shade */
+    background-color: #ecfffb;
 }
 
 .hero__small-text {
-  font-size: 1rem; /* Smaller text */
-  text-align: center;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .highlight {
-  font-size: 4rem;
-  /* color: #FF5733; */
-  font-weight: bold; /* Optional: make it bold */
+    font-size: 4rem;
+    font-weight: bold;
 }
 
-/* Split section */
+@media (max-width: 800px) {
+    .hero__content {
+        margin-right: 20px;
+    }
+}
 
-/* General section styles */
+
+/* Section: Split section */
+
 .split-section {
-  background-color: white; /* White background for the section */
-  padding: 50px 0; /* Add some padding to give spacing around the section */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center the content horizontally */
-  /* margin-top: 5000px; */
+    background-color: white;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Heading styles */
 .split-section__header h2 {
-  font-weight: 400;
-  font-size: 2.5rem; /* You can adjust this as needed */
-  margin-bottom: 20px;
-  text-align: center;
-  display: inline-block; /* Allow the heading to be inline */
-  margin: 0; /* Remove default margin */
-  margin-right: 10px; /* Add space between the heading and the arrow */
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
 }
 
 .split-section__header h2 a {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .blue_highlight {
-  display: inline; /* Inline to behave like a regular text link */
-  background-color: #d6fff7; /* Highlight color */
-  text-decoration: none;
-  color: black;
-  text-align: left;
-  align-self: flex-start;
+    display: inline;
+    background-color: #d6fff7;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
 }
 
 .split-section__header img {
-  margin-top: 80px;
-  display: inline-block; /* Keep the arrow inline with the heading */
-  vertical-align: middle; /* Align the arrow vertically with the heading */
+    margin-top: 80px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-/* Content container */
 .split-section__content {
-  display: flex;
-  justify-content: space-between; /* Ensure left and right parts are split */
-  align-items: center; /* Vertically center the content */
-  max-width: 1200px; /* Limit the maximum width of the section */
-  width: 100%; /* Ensure full width */
-  padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
 }
 
-/* Left (image) section */
 .split-section__left {
-  flex: 1;
-  padding-right: 20px;
+    flex: 1;
+    padding-right: 20px;
 }
 
 .split-section__left img {
-  width: 100%; /* Make the image responsive */
-  height: auto;
-  max-width: 500px; /* Adjust as needed */
+    width: 100%;
+    height: auto;
+    max-width: 500px;
 }
 
-/* Right (text) section */
 .split-section__right {
-  flex: 1;
-  padding-left: 20px;
-  text-align: center;
+    flex: 1;
+    padding-left: 20px;
+    text-align: center;
 }
 
 .split-section__right h1 {
-  font-optical-sizing: auto;
-  font-size: 3rem;
-  color: #ee7547;
+    font-optical-sizing: auto;
+    font-size: 3rem;
+    color: #ee7547;
 }
 
 .split-section__right--content {
-  font-size: 1.2rem;
-  text-align: left;
+    font-size: 1.2rem;
+    text-align: left;
 }
 
-/* Make the layout responsive for smaller screens */
 @media (max-width: 820px) {
-  .split-section__content {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
+    .split-section__content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
 
-  .split-section__left,
-  .split-section__right {
-    padding: 0;
-  }
+    .split-section__left,
+    .split-section__right {
+        padding: 0;
+    }
 
-  .split-section__left img {
-    max-width: 100%;
-  }
+    .split-section__left img {
+        max-width: 100%;
+    }
 
-  /* Hide the arrow for smaller screens */
-  .arrow__img {
-    display: none !important;
-  }
+    /* Hide the arrow for smaller screens */
+    .arrow__img {
+        display: none !important;
+    }
 }
 
-/* Location section */
+/* Section: Lokations */
 
-/* General Section Styling */
 .location-section {
-  padding: 50px 0; /* Adjust as needed */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .location-section__content {
-  width: 80%; /* Content width */
-  max-width: 1200px; /* Limit max width */
+    width: 80%;
+    max-width: 1200px;
 }
 
-/* Heading and Dash*/
 .location-section__heading {
-  text-align: center;
-  width: 50;
-  margin: 0 auto 30px auto;
+    text-align: center;
+    width: 50;
+    margin: 0 auto 30px auto;
 }
 
 .location-section__heading h2 {
-  font-weight: 200;
+    font-weight: 200;
 }
 
 .horizontal-dash {
-  width: 100%;
-  height: 1px !important; /* Makes the dash thinner */
-  background-color: #d3d3d3 !important; /* Light grey color */
-  margin: 10px auto; /* Center it horizontally */
-  border: none !important; /* Removes the default border */
+    width: 100%;
+    height: 1px !important;
+    background-color: #d3d3d3 !important;
+    margin: 10px auto;
+    border: none !important;
 }
 
-/* Text and Locations Area */
 .location-section__info {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; /* Center items vertically */
-  margin-bottom: 30px;
-  flex-wrap: nowrap; /* Prevent wrapping */
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
 }
 
 .location-section__text {
-  width: 20%;
-  font-size: 1.2rem;
+    width: 20%;
+    font-size: 1.2rem;
 }
 
-/* Locations Grid */
 .location-section__locations {
-  position: relative;
-  width: 75%;
-  display: flex;
-  flex-wrap: wrap; /* Wrap locations onto the next line if needed */
-  gap: 10px; /* Add spacing between locations */
-  padding-left: 20px;
+    position: relative;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 20px;
 }
-
-/* Individual Location Styling */
 
 .location {
-  background-color: #ffded2;
-  border-radius: 50px;
-  padding: 5px 10px;
-  display: flex;
-  align-items: center;
-  color: #ee7547;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
+    background-color: #ffded2;
+    border-radius: 50px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    color: #ee7547;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
 
-/* Dropdown Styling */
 .location-section__dropdown {
-  width: 80%; /* Content width */
-  max-width: 1200px; /* Limit max width */
-  position: relative;
+    width: 80%;
+    max-width: 1200px;
+    position: relative;
 }
 
 .dropdown-menu {
-  display: inline-block; /* Makes sure the dropdown is displayed properly */
-  padding: 10px; /* Add some padding for better appearance */
-  border: 1px solid #ccc; /* Add a border for visibility */
-  border-radius: 50px; /* Round the corners */
-  cursor: pointer; /* Show pointer cursor */
-  margin-top: -25px;
-  margin-left: 20px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: -25px;
+    margin-left: 20px;
 }
 
-/* Additional horizontal dash styling */
 .horizontal-dash {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 0.5px solid #d4d4d4; /* Adds the border */
-  max-width: 1200px; /* or whatever width you need */
-  height: 2px; /* or whatever height you need */
-  background-color: #333; /* Set the color of the horizontal dash */
-  margin: 20px auto; /* Center the dash */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0.5px solid #d4d4d4;
+    max-width: 1200px;
+    height: 2px;
+    background-color: #333;
+    margin: 20px auto;
 }
 
 @media (max-width: 480px) {
-  .location-section__text {
-    width: 20%;
-    font-size: 0.8rem;
-  }
+    .location-section__text {
+        width: 20%;
+        font-size: 0.8rem;
+    }
 }
 
-/* General section styling */
-
+/* Section: People */
 .icon-container {
-  background-color: #d6fff7; /* Circle background color */
-  border-radius: 50%; /* Make it a circle */
-  display: inline-flex; /* Align items inside */
-  align-items: center; /* Center the icon vertically */
-  justify-content: center; /* Center the icon horizontally */
-  width: 40px; /* Set the width of the circle */
-  height: 40px; /* Set the height of the circle */
-  margin-right: 10px; /* Space between the icon and text */
+    background-color: #d6fff7;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
 
 .filled_icon {
-  color: #231651; /* Icon color */
-  font-size: 24px; /* Adjust size if needed */
+    color: #231651;
+    font-size: 24px;
 }
 
 .people-section {
-  padding: 50px 0; /* Add space around the section */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center items horizontally */
-  max-width: 1200px;
-  margin: 0 auto; /* Center the section itself */
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .person {
-  background-color: white; /* Set background color to white */
-  display: flex;
-  width: 100%; /* Width of the subsection */
-  align-items: center; /* Vertically align image and text */
-  justify-content: center; /* Center content horizontally */
-  margin: 40px auto; /* Center the person card horizontally */
+    background-color: white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
 }
 
 .play-image__container {
-  position: absolute; /* Position this image absolutely within the person__image */
-  bottom: 15px; /* Align to the bottom */
-  right: 15px; /* Align to the right */
-  width: 30%; /* Set width for the small image */
-  border: 3px solid white;
-  cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 30%;
+    border: 3px solid white;
+    cursor: pointer;
 }
 
 .playback-icon {
-  position: absolute; /* Position the icon absolutely within the small image container */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%);
-  color: white; /* Change color as necessary */
-  font-size: 24px; /* Adjust size as necessary */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
 }
 
-/* Image styling */
 .person__image {
-  position: relative;
-  flex: 1; /* Set to 1/3 of the card width */
+    position: relative;
+    flex: 1;
 }
 
 .person__image img {
-  width: 100%; /* Make image responsive */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 0; /* Remove rounding */
+    width: 100%;
+    height: auto;
+    border-radius: 0;
 }
 
-/* Right side content */
 .person__details {
-  flex: 2; /* This will take 2/3 of the card */
-  padding: 20px; /* Add padding for details */
-  margin: auto 70px;
-
-  display: flex; /* Enable flexbox */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center content horizontally */
-  text-align: left; /* Optional: center text inside */
-  gap: 10px;
+    flex: 2;
+    padding: 20px;
+    margin: auto 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
 }
 
-/* Name and location */
 .person__header {
-  display: flex;
-  justify-content: left; /* Name on left, location on right */
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
 }
 
 .person__name {
-  font-family: "Alatsi", sans-serif;
-  font-weight: 100;
-  font-size: 2rem;
+    font-family: "Alatsi", sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
 }
 
-/* Description text */
 .person__description {
-  font-size: 1rem;
-  text-align: left;
-  align-self: flex-start;
+    font-size: 1rem;
+    text-align: left;
+    align-self: flex-start;
 }
 
-/* Website link styling */
 .link {
-  display: inline; /* Inline to behave like a regular text link */
-  background-color: #d6fff7; /* Highlight color */
-  text-decoration: none;
-  color: black;
-  text-align: left;
-  align-self: flex-start;
+    display: inline;
+    background-color: #d6fff7;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
 }
 
 .link:hover {
-  background-color: #bfffe6; /* Slightly lighter highlight on hover */
-  text-decoration: underline; /* Optionally add underline on hover */
+    background-color: #bfffe6;
+    text-decoration: underline;
 }
 
-/* Button styling */
 .person__btn {
-  font-family: "Alatsi", sans-serif;
-  font-weight: 200;
-  letter-spacing: 0.44px;
-  display: block;
-  background-color: #231651;
-  color: #d6fff7;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 100px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
+    font-family: "Alatsi", sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.44px;
+    display: block;
+    background-color: #231651;
+    color: #d6fff7;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .person__btn:hover {
-  background-color: #3b285c; /* Slightly lighter on hover */
+    background-color: #3b285c;
 }
 
-/* Responsive Layout: Stack image and text on smaller screens */
 @media (max-width: 800px) {
-  .person {
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: center; /* Center items */
-  }
+    .person {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .person__image {
-    padding: 0; /* Remove right padding */
-    margin-bottom: 20px; /* Add margin between image and text */
-    width: 100%; /* Set image width to 100% on small screens */
-  }
+    .person__image {
+        padding: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
 
-  .person__details {
-    padding-left: 0; /* Remove left padding */
-    text-align: center; /* Center the text content */
-  }
+    .person__details {
+        padding-left: 0;
+        text-align: center;
+    }
 
-  .person__header {
-    flex-direction: column; /* Stack name and location vertically */
-  }
+    .person__header {
+        flex-direction: column;
+    }
 
-  .person__name {
-    margin-bottom: 10px; /* Add space between name and location */
-  }
+    .person__name {
+        margin-bottom: 10px;
+    }
 
-  .location {
-    justify-content: center; /* Center location text */
-  }
+    .location {
+        justify-content: center;
+    }
 }
 
-/* Footer styling */
+/* Section: Footer */
 .footer {
-  background-color: #231651; /* Dark background */
-  padding: 20px; /* Add padding inside the footer */
-  color: white; /* Text color */
-  position: relative; /* Stay within the normal flow of the page */
-  margin-bottom: 10px; /* Distance from the bottom of the page */
-  text-align: center;
+    background-color: #231651;
+    padding: 20px;
+    color: white;
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .footer__content {
-  display: flex;
-  justify-content: flex-start; /* Align content to the left */
-  padding-left: 25px; /* Add left margin to give space from the page edge */
-  max-width: 1200px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer__link {
-  color: white; /* White text */
-  text-decoration: none; /* Remove underline */
-  margin-right: 10px; /* Space between links */
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
 }
 
 .footer__separator {
-  color: white; /* Separator color */
-  margin-right: 10px; /* Space after the separator */
+    color: white;
+    margin-right: 10px;
 }
 
 .footer__link:hover {
-  text-decoration: none; /* Optional: Add underline on hover */
+    text-decoration: none;
 }
