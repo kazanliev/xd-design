@@ -32,6 +32,7 @@ body {
 }
 
 /* Section: Header */
+/* --------------- */
 .header {
     display: flex;
     justify-content: left;
@@ -59,6 +60,7 @@ body {
 }
 
 /* Section: Hero */
+/* ------------- */
 .hero {
     display: flex;
     align-items: center;
@@ -66,6 +68,7 @@ body {
     min-height: 600px;
     max-width: 1920px;
     background-image: url("img/hero_image.png");
+    /* keep the white text on the dark side of the image */
     background-position: right center;
     background-repeat: no-repeat;
     z-index: 1;
@@ -139,7 +142,8 @@ body {
 
 
 /* Section: Split section */
-
+/* --------------------- */
+/* Follows the hero section */
 .split-section {
     background-color: white;
     padding: 50px 0;
@@ -230,14 +234,14 @@ body {
         max-width: 100%;
     }
 
-    /* Hide the arrow for smaller screens */
+    /* Hide the arrow for smaller screens*/
     .arrow__img {
         display: none !important;
     }
 }
 
-/* Section: Lokations */
-
+/* Section: Locations */
+/* ------------------ */
 .location-section {
     padding: 50px 0;
     display: flex;
@@ -341,6 +345,9 @@ body {
 }
 
 /* Section: People */
+/* --------------- */
+
+/* Design for the material icons */
 .icon-container {
     background-color: #d6fff7;
     border-radius: 50%;
@@ -357,6 +364,7 @@ body {
     font-size: 24px;
 }
 
+/* Container for all team members */
 .people-section {
     padding: 50px 0;
     display: flex;
@@ -449,7 +457,6 @@ body {
 }
 
 .person__btn {
-    /* font-weight: 100; */
     letter-spacing: 0.44px;
     display: block;
     background-color: #231651;
