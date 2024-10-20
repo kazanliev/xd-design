@@ -65,7 +65,6 @@ body {
 }
 
 
-
 /* Content styles */
 .hero__content {
     /* border-color: red;
@@ -84,12 +83,18 @@ body {
     flex-direction: column; 
 }
 
+@media (max-width: 600px) {
+    .hero__content {
+        padding-right: 20px;}
+}
+
 .hero__title {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 3rem; /* Large title */
     margin: 0; /* Remove default margin */
     text-align: left;
+    padding-top: 40px;
 }
 
 .hero__subtitle {
@@ -435,7 +440,7 @@ body {
 .person__details {
     flex: 2; /* This will take 2/3 of the card */
     padding: 20px; /* Add padding for details */
-    margin-left: 50px;
+    margin: auto 70px;
 
     display: flex; /* Enable flexbox */
     flex-direction: column; /* Stack children vertically */
@@ -449,7 +454,7 @@ body {
     justify-content: left; /* Name on left, location on right */
     align-items: center;
     margin-bottom: 10px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .person__name {
@@ -478,6 +483,7 @@ body {
     font-size: 1rem;
     margin-bottom: 20px;
     text-align: left;
+    align-self: flex-start;
 }
 
 /* Website link styling */
