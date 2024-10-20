@@ -1,11 +1,15 @@
 * {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    /* box-sizing: border-box; */
+    box-sizing: border-box; 
 }
 
-.background {
-    background-color: white;
+body {
+    background-color:white ;
+}
+
+.light-blue_background {
+    background-color: #F1F6F5;
 }
 
 .highlight,
@@ -34,8 +38,8 @@
 
 /* Header styling */
 .header {
-    display: flex; /* Align logos horizontally */
-    justify-content: left; /* Optional: space logos evenly */
+    display: flex; 
+    justify-content: left; 
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px; 
@@ -45,30 +49,22 @@
 }
 
 .header__logo {
-    display: inline-block; /* Allows the link to have width and height */
-    text-decoration: none; /* Removes the underline from the link */
+    display: inline-block; 
+    text-decoration: none; 
 }
 
 .header__logo img {
-    width: 100px; /* Set the desired width for the logos */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s ease; /* Optional: add a hover effect */
+    width: 100px; 
+    height: auto; 
+    transition: transform 0.3s ease; 
 }
 
 .header__logo img:hover {
-    transform: scale(1.1); /* Optional: scale effect on hover */
+    transform: scale(1.1); 
 }
 
 
 /* Hero styling */
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #F1F6F5;
-}
-
-
 
 .hero {
     display: flex;
@@ -240,6 +236,7 @@ body {
     .split-section__content {
         flex-direction: column;
         text-align: center;
+        gap: 30px;
     }
 
     .split-section__left,
@@ -265,7 +262,6 @@ body {
 
 /* General Section Styling */
 .location-section {
-    background-color: #F1F6F5;
     padding: 50px 0; /* Adjust as needed */
     display: flex;
     justify-content: center;
@@ -280,18 +276,14 @@ body {
 /* Heading and Dash*/
 .location-section__heading {
     text-align: center;
+    width: 50;
+    margin: 0 auto 30px auto;
 } 
 
 .location-section__heading h2 {
     font-weight: 200;
-    width: 50%;
-    margin: 0 auto 30px auto;
 }
 
-.location-section__heading p {
-    width: 30%;
-    margin: 0 auto 30px auto;
-}
 
 .horizontal-dash {
     width: 100%;
@@ -396,7 +388,6 @@ body {
 }
 
 .people-section {
-    background-color: #F1F6F5; /* Same background color */
     padding: 50px 0; /* Add space around the section */
     display: flex;
     flex-direction: column;
