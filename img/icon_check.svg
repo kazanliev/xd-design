@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
-  <g id="icon_check" transform="translate(-465 -1229)">
-    <circle id="Ellipse_36" data-name="Ellipse 36" cx="21.5" cy="21.5" r="21.5" transform="translate(465 1229)" fill="#d6fff7"/>
-    <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M20.911,10.737A10.174,10.174,0,1,1,10.737.562,10.174,10.174,0,0,1,20.911,10.737ZM9.56,16.124l7.549-7.549a.656.656,0,0,0,0-.928l-.928-.928a.656.656,0,0,0-.928,0L9.1,12.875,6.222,10a.656.656,0,0,0-.928,0l-.928.928a.656.656,0,0,0,0,.928l4.267,4.267A.656.656,0,0,0,9.56,16.124Z" transform="translate(475.399 1239.994)" fill="#231651"/>
-  </g>
-</svg>
