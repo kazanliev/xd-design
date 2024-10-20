@@ -22,7 +22,8 @@ body {
 .split-section__header h2,
 .split-section__header h2 a,
 .location-section__heading h2,
-.blue_highlight {
+.blue_highlight,
+.person__btn {
     font-family: "Alatsi", sans-serif;
 }
 
@@ -104,7 +105,7 @@ body {
     font-size: x-large;
     letter-spacing: 0.5px;
     display: inline-block;
-    padding: 15px 30px;
+    padding: 15px 40px;
     background-color: #d6fff7;
     color: black;
     text-decoration: none;
@@ -444,17 +445,16 @@ body {
 }
 
 .person__btn {
-    font-family: "Alatsi", sans-serif;
-    font-weight: 200;
+    /* font-weight: 100; */
     letter-spacing: 0.44px;
     display: block;
     background-color: #231651;
     color: #d6fff7;
-    padding: 10px 20px;
+    padding: 15px 40px;
     border: none;
     border-radius: 100px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.5rem;
     transition: background-color 0.3s ease;
     margin-top: 10px;
 }
