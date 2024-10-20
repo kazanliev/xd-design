@@ -334,7 +334,7 @@ body {
 .location {
     background-color: #FFDED2;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     display: flex;
     align-items: center;
     color: #EE7547;
@@ -597,12 +597,15 @@ body {
     color: white; /* Text color */
     position: relative; /* Stay within the normal flow of the page */
     margin-bottom: 10px; /* Distance from the bottom of the page */
+    text-align: center;
 }
 
 .footer__content {
     display: flex;
     justify-content: flex-start; /* Align content to the left */
-    margin-left: 20px; /* Add left margin to give space from the page edge */
+    padding-left: 25px; /* Add left margin to give space from the page edge */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer__link {
