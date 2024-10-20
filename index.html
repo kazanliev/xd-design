@@ -17,62 +17,64 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="background">
     <!-- Header -->
-    <header>
-        <div class="header">
-            <a href="/" class="header__logo">
-                <img src="img/Lexware_logo.png" alt="Logo 1" class="header__logo--img">
-            </a>
-            <a href="/" class="header__logo">
-                <img src="img/Lexoffice_logo.png" alt="Logo 2" class="header__logo--img">
-            </a>
-        </div>
-    </header>
-
-    <!-- Hero -->
-    <div class="hero_back">
-        <div class="hero">
-            <div class="hero__content">
-            <h1 class="hero__title">Stellen Sie sich vor, es ist Jahresabschluss und alles läuft <span class="highlight"> von selbst </span></h1>
-                <p class="hero__subtitle">Mit einer <b>digital</b> automatisierten Buchhaltung sind alle Zahlen & Belege 
-                    schon geordnet in 1 System – für Ihren Steuerberater oder für die Anlage EUR</p>
-                <button class="hero__btn" onclick="void(0);">Buchhaltung automatisieren &rarr;</button>
-                <p class="hero__small-text">Eingerichtet von Experten</p>
+        <header>
+            <div class="header">
+                <a href="/" class="header__logo">
+                    <img src="img/Lexware_logo.png" alt="Logo Lexware">
+                </a>
+                <a href="/" class="header__logo">
+                    <img src="img/Lexoffice_logo.png" alt="Logo Lexoffice">
+                </a>
             </div>
-        </div>
-    </div>
+        </header>
 
-    <!-- Split section -->
-    <section class="split-section">
-        <div class="split-section__header">
-            <h2>Buchhaltung ist <a href="#" class="person__link">nicht</a> Ihr Lieblingsthema?</h2>
-            <img src="img/arrow.svg" alt="" class="arrow__img">
-        </div>
-        <div class="split-section__content">
-            <div class="split-section__left">
-                <img src="img/9_image.png" alt="Description of image">
-            </div>
-            <div class="split-section__right">
-                <h1>Aber <span style="text-decoration: underline; font-family: inherit;">das</span> unserer Coaches!</h1>
-                <div class="split-section__right--content">
-                    <p>
-                        Treffen Sie Menschen, deren Leidenschaft Finanzen sind. Die beraten,  
-                        schulen und unterstützen und dafür sorgen, dass die Buchhaltung läuft.
-                    </p>
-                    <p>
-                        Lassen Sie sich in 90 Sekunden erklären, was unsere Coaches Ihnen abnehmen - damit 
-                        Sie sich voll und ganz auf Ihr Unternehmen konzentrieren können.
-                    </p>
-                    <p>
-                        Auf den folgenden Seiten lernen Sie Coaches in ihrer Nähe kennen. In wenigen Klicks 
-                        können Sie mit Ihnen ganz <b>unverbindlich</b> in Kontakt treten.
-                    </p>
+        <!-- Hero -->
+
+            <div class="hero">
+                <div class="hero__content">
+                <h1 class="hero__title">Stellen Sie sich vor, es ist Jahresabschluss und alles läuft <span class="highlight"> von selbst </span></h1>
+                    <p class="hero__subtitle">Mit einer <b>digital</b> automatisierten Buchhaltung sind alle Zahlen & Belege 
+                        schon geordnet in 1 System – für Ihren Steuerberater oder für die Anlage EUR</p>
+                    <button class="buchhaltung__btn" onclick="void(0);">Buchhaltung automatisieren &rarr;</button>
+                    <p class="hero__small-text">Eingerichtet von Experten</p>
                 </div>
-                    <button class="split-section__btn" onclick="void(0);">Buchhaltung automatisieren &rarr;</button>
-                    <p class="split-section__small-text">Eingerichtet von Experten</p>
             </div>
-        </div>
-    </section>
+        
+
+        <!-- Split section -->
+        <section class="split-section">
+            <div class="split-section__header">
+                <h2>Buchhaltung ist <span class="blue_highlight">nicht</span> Ihr Lieblingsthema?</h2>
+                <img src="img/arrow.svg" alt="" class="arrow__img">
+            </div>
+            <div class="split-section__content">
+                <div class="split-section__left">
+                    <img src="img/9_image.png" alt="Description of image">
+                </div>
+                <div class="split-section__right">
+                    <h1>Aber <span style="text-decoration: underline; font-family: inherit;">das</span> unserer Coaches!</h1>
+                    <div class="split-section__right--content">
+                        <p>
+                            Treffen Sie Menschen, deren Leidenschaft Finanzen sind. Die beraten,  
+                            schulen und unterstützen und dafür sorgen, dass die Buchhaltung läuft.
+                        </p>
+                        <p>
+                            Lassen Sie sich in 90 Sekunden erklären, was unsere Coaches Ihnen abnehmen - damit 
+                            Sie sich voll und ganz auf Ihr Unternehmen konzentrieren können.
+                        </p>
+                        <p>
+                            Auf den folgenden Seiten lernen Sie Coaches in ihrer Nähe kennen. In wenigen Klicks 
+                            können Sie mit Ihnen ganz <b>unverbindlich</b> in Kontakt treten.
+                        </p>
+                    </div>
+                        <button class="buchhaltung__btn" onclick="void(0);">Buchhaltung automatisieren &rarr;</button>
+                        <p class="split-section__small-text">Eingerichtet von Experten</p>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <section class="location-section">
         <div class="location-section__content">
@@ -115,12 +117,9 @@
                     <button class="location" onclick="void(0);">
                         <span class="material-icons-outlined"> location_on </span>  Offenbach
                     </button>
-                    <div>
-                        <a href="#" class="person__link">
-                    </div>
                     <!-- Add more location items as needed -->
                      <div>
-                        <a href="#" class="person__link"><u>Keiner in Ihrer Nähe?</u></a>
+                        <a href="#" class="link"><u>Keiner in Ihrer Nähe?</u></a>
                      </div>
                     
                     
@@ -158,8 +157,8 @@
         <div class="person">
             <div class="person__image">
                 <img src="img/sascha_roesler.png" alt="Person 1">
-                <a href="" class="small-image-container">
-                    <img src="img/sascha_roesler_play.png" alt="Small Image" class="small-image">
+                <a href="" class="play-image__container">
+                    <img src="img/sascha_roesler_play.png"  class="play-image">
                     <span class="material-icons-outlined playback-icon">play_circle</span>
                 </a>
             </div>
@@ -176,7 +175,7 @@
                     </span> 
                     Selbständiger Unternehmer und zertifizierter Coach aus Berlin.
                 </p>
-                <a href="#" class="person__link">
+                <a href="#" class="link">
                     <u>Website besuchen &rarr;</u>
                 </a>
                 <button class="person__btn" onclick="void(0);">
@@ -189,8 +188,8 @@
         <div class="person">
             <div class="person__image">
                 <img src="img/annick_weikert.png" alt="Person 2">
-                <a href="" class="small-image-container">
-                    <img src="img/annick_weikert_play.png" alt="Small Image" class="small-image">
+                <a href="" class="play-image__container">
+                    <img src="img/annick_weikert_play.png" class="play-image">
                     <span class="material-icons-outlined playback-icon">play_circle</span>
                 </a>
             </div>
@@ -224,7 +223,7 @@
                     </span> Ich habe <b>langjährige Erfahrungen</b> in den Bereichen NLP, systemischer Aufstellung, Mediation und 
                     Mentaltraining.
                 </p>
-                <a href="#" class="person__link">
+                <a href="#" class="link">
                     <u>Website besuchen &rarr;</u>
                 </a>
                 <button class="person__btn" onclick="void(0);">

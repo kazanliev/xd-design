@@ -1,16 +1,43 @@
 * {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
+
+.background {
+    background-color: white;
+}
+
+.highlight,
+.split-section__right h1 {
+    font-family: "Caveat", cursive;
+}
+
+.hero__title,
+.buchhaltung__btn,
+.split-section__header h2,
+.split-section__header h2 a,
+.location-section__heading h2,
+.blue_highlight {
+    font-family: "Alatsi", sans-serif;
+}
+
+.material-icons-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 3000,
+    'GRAD' 0,
+    'opsz' 10;
+  }
+
 
 
 /* Header styling */
 .header {
     display: flex; /* Align logos horizontally */
     justify-content: left; /* Optional: space logos evenly */
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px; 
     padding-left: 60px;
     background-color: white;
@@ -22,13 +49,13 @@
     text-decoration: none; /* Removes the underline from the link */
 }
 
-.header__logo--img {
+.header__logo img {
     width: 100px; /* Set the desired width for the logos */
     height: auto; /* Maintain aspect ratio */
     transition: transform 0.3s ease; /* Optional: add a hover effect */
 }
 
-.header__logo--img:hover {
+.header__logo img:hover {
     transform: scale(1.1); /* Optional: scale effect on hover */
 }
 
@@ -41,25 +68,18 @@ body {
     background-color: #F1F6F5;
 }
 
-.hero_back {
-    background-color: white;
-}
+
 
 .hero {
     display: flex;
     align-items: center; /* Center vertically */
     justify-content: right; /* Align content to the right */
-    /* padding: 20px;  */
     min-height: 600px;
     max-width: 1920px;
-    overflow: hidden; /* Hide overflow */
-    position: relative; /* Position for pseudo-element */
     background-image: url('img/hero_image.png');
     background-position: right center; /* Center the image */
     background-repeat: no-repeat;
-    /* background-size: cover; */
     z-index: 1; /* Send the image behind the content */
-    padding: 0; /* Adjusted padding for left and right only */
     margin: 0 auto;
 }
 
@@ -86,7 +106,6 @@ body {
 }
 
 .hero__title {
-    font-family: "Alatsi", sans-serif;
     font-weight: 400;
     font-size: 3rem; /* Large title */
     margin: 0; /* Remove default margin */
@@ -99,8 +118,7 @@ body {
     margin: 10px 0; /* Add margin */
 }
 
-.hero__btn {
-    font-family: "Alatsi", sans-serif;
+.buchhaltung__btn {
     font-weight: 200;
     font-size: x-large;
     letter-spacing: 0.5px;
@@ -117,7 +135,7 @@ body {
     cursor: pointer;
 }
 
-.hero__btn:hover {
+.buchhaltung__btn:hover {
     background-color: #ecfffb; /* Slightly lighter shade */
 }
 
@@ -127,19 +145,10 @@ body {
 }
 
 .highlight {
-    font-family: "Caveat", cursive;
     font-size: 4rem;
     /* color: #FF5733; */
     font-weight: bold; /* Optional: make it bold */
 }
-
-/* Media Query for large screens */
-/* @media (min-width: 1200px) {
-    .hero {
-        max-width: 90%; 
-        margin: 0 auto; 
-    }
-}  */
 
 
 
@@ -158,7 +167,6 @@ body {
 
 /* Heading styles */
 .split-section__header h2 {
-    font-family: "Alatsi", sans-serif;
     font-weight: 400;
     font-size: 2.5rem; /* You can adjust this as needed */
     margin-bottom: 20px;
@@ -169,8 +177,16 @@ body {
 }
 
 .split-section__header h2 a {
-    font-family: "Alatsi", sans-serif;
     font-weight: 400;
+}
+
+.blue_highlight{
+    display: inline; /* Inline to behave like a regular text link */
+    background-color: #D6FFF7; /* Highlight color */
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    align-self: flex-start;
 }
 
 .split-section__header img {
@@ -209,7 +225,6 @@ body {
 }
 
 .split-section__right h1 {
-    font-family: "Caveat", cursive;
     font-optical-sizing: auto;
     font-size: 3rem;
     color:#EE7547;
@@ -217,29 +232,7 @@ body {
 
 .split-section__right--content {
     font-size: 1.2rem;
-    line-height: 1.6;
     text-align: left;
-}
-
-.split-section__btn {
-    font-family: "Alatsi", sans-serif;
-    font-weight: 200;
-    font-size: x-large;
-    letter-spacing: 0.5px;
-    display: inline-block; /* Display as a block for padding */
-    padding: 15px 30px; /* Button padding */
-    background-color: #d6fff7; /* Button color */
-    color: black; /* Button text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 100px; /* Rounded corners */
-    margin: 20px 0; /* Add margin */
-    border: none;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-    cursor: pointer;
-}
-
-.split-section__btn:hover {
-    background-color: #ecfffb; /* Slightly lighter shade */
 }
 
 /* Make the layout responsive for smaller screens */
@@ -258,6 +251,7 @@ body {
         max-width: 100%;
     }
 
+    /* Hide the arrow for smaller screens */
     .arrow__img {
         display: none !important;
     }
@@ -283,17 +277,20 @@ body {
     max-width: 1200px; /* Limit max width */
 }
 
-/* Heading and Dash */
+/* Heading and Dash*/
 .location-section__heading {
     text-align: center;
-    margin-bottom: 30px;
-    margin: 0 auto 30px auto;
-    width: 80%;
-}
+} 
 
 .location-section__heading h2 {
-    font-family: "Alatsi", sans-serif;
     font-weight: 200;
+    width: 50%;
+    margin: 0 auto 30px auto;
+}
+
+.location-section__heading p {
+    width: 30%;
+    margin: 0 auto 30px auto;
 }
 
 .horizontal-dash {
@@ -343,14 +340,6 @@ body {
     cursor: pointer;
 }
 
-.material-icons-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 3000,
-  'GRAD' 0,
-  'opsz' 10;
-}
-
 /* Dropdown Styling */
 .location-section__dropdown {
     width: 80%; /* Content width */
@@ -385,12 +374,6 @@ body {
         font-size: 0.8rem;
     }
 }
-
-
-
-
-
-
 
 
 
@@ -431,7 +414,7 @@ body {
     margin: 40px auto; /* Center the person card horizontally */
 }
 
-.small-image-container {
+.play-image__container {
     position: absolute; /* Position this image absolutely within the person__image */
     bottom: 15px; /* Align to the bottom */
     right: 15px; /* Align to the right */
@@ -440,16 +423,11 @@ body {
     cursor: pointer;
 }
 
-.small-image {
-    width: 100%; /* Make the small image fill the container */
-    height: 100%; /* Ensure it maintains its aspect ratio */
-}
-
 .playback-icon {
     position: absolute; /* Position the icon absolutely within the small image container */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset to truly center */
+    transform: translate(-50%, -50%); 
     color: white; /* Change color as necessary */
     font-size: 24px; /* Adjust size as necessary */
 }
@@ -458,8 +436,6 @@ body {
 .person__image {
     position: relative;
     flex: 1; /* Set to 1/3 of the card width */
-    padding: 0; /* No padding */
-    margin: 0; /* No margin */
 }
 
 .person__image img {
@@ -478,6 +454,7 @@ body {
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center content horizontally */
     text-align: left; /* Optional: center text inside */
+    gap: 10px;
 }
 
 /* Name and location */
@@ -485,7 +462,6 @@ body {
     display: flex;
     justify-content: left; /* Name on left, location on right */
     align-items: center;
-    margin-bottom: 10px;
     gap: 20px;
 }
 
@@ -495,32 +471,16 @@ body {
     font-size: 2rem;
 }
 
-.location {
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-/* Location icon styling */
-.location-icon {
-    background-color: #EE7547; /* Icon color */
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    border-radius: 50%;
-    margin-right: 8px; /* Space between icon and location text */
-}
 
 /* Description text */
 .person__description {
     font-size: 1rem;
-    margin-bottom: 20px;
     text-align: left;
     align-self: flex-start;
 }
 
 /* Website link styling */
-.person__link {
+.link {
     display: inline; /* Inline to behave like a regular text link */
     background-color: #D6FFF7; /* Highlight color */
     text-decoration: none;
@@ -529,7 +489,7 @@ body {
     align-self: flex-start;
 }
 
-.person__link:hover {
+.link:hover {
     background-color: #BFFFE6; /* Slightly lighter highlight on hover */
     text-decoration: underline; /* Optionally add underline on hover */
 }
@@ -619,6 +579,6 @@ body {
     margin-right: 10px; /* Space after the separator */
 }
 
-.footer__link:hover {
-    text-decoration: underline; /* Optional: Add underline on hover */
-}
+ .footer__link:hover {
+    text-decoration: none; /* Optional: Add underline on hover */
+ }
