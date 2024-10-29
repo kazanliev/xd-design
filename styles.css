@@ -504,6 +504,47 @@ body {
     }
 }
 
+
+
+/* Form row styling */
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .error-message {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+  }
+  
+  /* Error style when field is invalid */
+  .form-field.invalid {
+    border-color: red;
+  }
+
+  .suggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none; /* Hide suggestions by default */
+    position: absolute;
+    background: white;
+    width: 100%;
+    z-index: 10;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+
 /* Section: Footer */
 .footer {
     background-color: #231651;

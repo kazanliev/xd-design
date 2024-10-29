@@ -263,6 +263,65 @@
         </section>
     </div>
 
+
+    <section class="form-section">
+        <!-- Left half with text content -->
+        <div class="form-section__left">
+            <p>Hier könnte Ihr Text stehen...</p>
+        </div>
+    
+        <!-- Right half with the form -->
+        <div class="form-section__right">
+            <form id="userForm">
+                <!-- Name fields -->
+                <div class="form-row">
+                    <input type="text" id="firstName" placeholder="Vorname" class="form-field form-field--half" required
+                        oninvalid="this.setCustomValidity('Bitte geben Sie Ihren Vornamen ein.')" onchange="this.setCustomValidity('')">
+                    <!-- <span class="error-message" id="firstNameError"></span> -->
+                    <input type="text" id="lastName" placeholder="Nachname" class="form-field form-field--half" required
+                        oninvalid="this.setCustomValidity('Bitte geben Sie Ihren Nachnamen ein.')" onchange="this.setCustomValidity('')">
+                    <span class="error-message" id="lastNameError"></span>
+                </div>
+    
+                <!-- Email field -->
+                <div class="form-row">
+                    <input type="email" id="email" placeholder="E-Mail-Adresse" class="form-field" required
+                        oninvalid="this.setCustomValidity('Bitte geben Sie eine gültige E-Mail-Adresse ein.')" onchange="this.setCustomValidity('')">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+    
+                <!-- Postal Code and City fields -->
+                <div class="form-row">
+                    <input type="text" id="postalCode" placeholder="PLZ" class="form-field form-field--small" required pattern="^\d{5}$"
+                        oninvalid="this.setCustomValidity('Bitte geben Sie eine gültige Postleitzahl ein.')" onchange="this.setCustomValidity('')">
+                    <!-- required pattern="^\d{5}$" -->
+                    <span class="error-message" id="postalCodeError"></span>
+                    <input type="text" id="city" placeholder="Ort" class="form-field form-field--large" required
+                        oninvalid="this.setCustomValidity('Bitte geben Sie eine Stadt ein.')" onchange="this.setCustomValidity('')">
+                    <!-- <span class="error-message" id="cityError"></span> -->
+                </div>
+                <div id="suggestions" class="suggestions"></div>
+    
+                <!-- Checkbox row -->
+                <div class="form-row form-row--checkbox">
+                    <input type="checkbox" id="consent" class="form-checkbox" required
+                        oninvalid="this.setCustomValidity('Bitte stimmen Sie der Datenverarbeitung zu.')" onchange="this.setCustomValidity('')">
+                    <label for="consent">Einwilligung Datenverarbeitung/Datenschutz</label>
+                    <!-- <span class="error-message" id="consentError"></span> -->
+                </div>
+    
+                <!-- Submit button -->
+                <button type="submit" class="form-submit">Absenden</button>
+            </form>
+        </div>
+    </section>
+    
+        
+  
+      
+
+
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer__content">
@@ -273,6 +332,8 @@
             <a href="#" class="footer__link">Impressum</a>
         </div>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
