@@ -267,7 +267,10 @@
     <section class="form-section">
         <!-- Left half with text content -->
         <div class="form-section__left">
-            <p>Hier könnte Ihr Text stehen...</p>
+            <h1>Kein Coach in Ihrer Nähe?</h1>
+            <p>Finanzen sind Vertrauenssache. Und um zu vertrauen, muss man sich kennenlernen.</p>
+            <p>Miteinander sprechen, in Kontakt kommen, sich treffen. Das geht am besten vor Ort. Daher sind wir dort, wo Sie sind.</p>
+            <p>Gerne finden wir in Ihrer Umgebung einen Coach.</p>
         </div>
     
         <!-- Right half with the form -->
@@ -275,30 +278,24 @@
             <form id="userForm">
                 <!-- Name fields -->
                 <div class="form-row">
-                    <input type="text" id="firstName" placeholder="Vorname" class="form-field form-field--half" required
+                        <input type="text" id="firstName" placeholder="Vorname" class="form-field form-field--half" required
                         oninvalid="this.setCustomValidity('Bitte geben Sie Ihren Vornamen ein.')" onchange="this.setCustomValidity('')">
-                    <!-- <span class="error-message" id="firstNameError"></span> -->
-                    <input type="text" id="lastName" placeholder="Nachname" class="form-field form-field--half" required
+                        <input type="text" id="lastName" placeholder="Nachname" class="form-field form-field--half" required
                         oninvalid="this.setCustomValidity('Bitte geben Sie Ihren Nachnamen ein.')" onchange="this.setCustomValidity('')">
-                    <span class="error-message" id="lastNameError"></span>
                 </div>
     
                 <!-- Email field -->
                 <div class="form-row">
-                    <input type="email" id="email" placeholder="E-Mail-Adresse" class="form-field" required
+                        <input type="email" id="email" placeholder="E-Mail-Adresse" class="form-field" required
                         oninvalid="this.setCustomValidity('Bitte geben Sie eine gültige E-Mail-Adresse ein.')" onchange="this.setCustomValidity('')">
-                    <span class="error-message" id="emailError"></span>
                 </div>
     
                 <!-- Postal Code and City fields -->
                 <div class="form-row">
-                    <input type="text" id="postalCode" placeholder="PLZ" class="form-field form-field--small" required pattern="^\d{5}$"
-                        oninvalid="this.setCustomValidity('Bitte geben Sie eine gültige Postleitzahl ein.')" onchange="this.setCustomValidity('')">
-                    <!-- required pattern="^\d{5}$" -->
-                    <span class="error-message" id="postalCodeError"></span>
-                    <input type="text" id="city" placeholder="Ort" class="form-field form-field--large" required
+                        <input type="text" id="postalCode" placeholder="PLZ" class="form-field form-field--small" required pattern="^\d{5}$"
+                            oninvalid="this.setCustomValidity('Bitte geben Sie eine gültige Postleitzahl ein.')" onchange="this.setCustomValidity('')">
+                        <input type="text" id="city" placeholder="Ort" class="form-field form-field--large" required
                         oninvalid="this.setCustomValidity('Bitte geben Sie eine Stadt ein.')" onchange="this.setCustomValidity('')">
-                    <!-- <span class="error-message" id="cityError"></span> -->
                 </div>
                 <div id="suggestions" class="suggestions"></div>
     
@@ -311,7 +308,8 @@
                 </div>
     
                 <!-- Submit button -->
-                <button type="submit" class="form-submit">Absenden</button>
+                <button type="submit" class="form-submit">Coach vorschlagen &rarr;</button>
+                <p class="form__small-text">für kostenloses Gespräch</p>
             </form>
         </div>
     </section>
