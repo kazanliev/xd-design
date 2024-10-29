@@ -610,8 +610,7 @@ body {
     border: 1px solid #ccc;
     max-height: 150px;
     overflow-y: auto;
-    display: none; /* Hide suggestions by default */
-    position: absolute;
+    display: none; 
     background: white;
     width: 100%;
     z-index: 10;

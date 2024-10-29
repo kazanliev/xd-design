@@ -294,10 +294,11 @@
                 <div class="form-row">
                         <input type="text" id="postalCode" placeholder="PLZ" class="form-field form-field--small" required pattern="^\d{5}$"
                             oninvalid="this.setCustomValidity('Bitte geben Sie eine gültige Postleitzahl ein.')" onchange="this.setCustomValidity('')">
+                            <div id="suggestions" class="suggestions"></div>
                         <input type="text" id="city" placeholder="Ort" class="form-field form-field--large" required
                         oninvalid="this.setCustomValidity('Bitte geben Sie eine Stadt ein.')" onchange="this.setCustomValidity('')">
                 </div>
-                <div id="suggestions" class="suggestions"></div>
+                
     
                 <!-- Checkbox row -->
                 <div class="form-row form-row--checkbox">
